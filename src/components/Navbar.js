@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import { FiAlignJustify } from 'react-icons/fi';
 import logo from '../assets/images/logo.svg';
 
-const NavBar = () => {
+const Navbar = () => {
 
     const [show, setShow] = useState(false);
 
@@ -33,4 +33,4 @@ const NavBar = () => {
     )
 }
 
-export default NavBar;
+export default Navbar;

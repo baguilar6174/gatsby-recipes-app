@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from './Footer';
-import NavBar from './NavBar';
+import Navbar from './Navbar';
 
 import 'normalize.css';
 import '../assets/css/main.css';
@@ -10,7 +10,7 @@ const Layout = ({ children, location }) => {
     return (
         <>
             <Head/>
-            <NavBar/>
+            <Navbar/>
             <div>
                 {children}
             </div>
