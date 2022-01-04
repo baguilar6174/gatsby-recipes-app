@@ -10,6 +10,7 @@ const query = graphql`
                 node {
                     frontmatter {
                         title
+                        slug
                         image {
                             childImageSharp {
                                 gatsbyImageData(tracedSVGOptions: {color: "#7b74ff"})

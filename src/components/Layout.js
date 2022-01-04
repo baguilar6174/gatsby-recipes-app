@@ -4,10 +4,12 @@ import NavBar from './NavBar';
 
 import 'normalize.css';
 import '../assets/css/main.css';
+import Head from './head';
 
 const Layout = ({ children, location }) => {
     return (
         <>
+            <Head/>
             <NavBar/>
             <div>
                 {children}

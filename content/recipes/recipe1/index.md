@@ -1,5 +1,6 @@
 ---
 title: 'Recipe 1'
+slug: /recipe-1
 cookTime: 12
 prepTime: 12
 servings: 12

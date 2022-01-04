@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import { graphql, Link } from "gatsby";
 import setupTags from "../utils/setupTags";
-import slugify from "slugify";
+const _ = require('lodash');
 
 const TagsPage = ({data}) => {
 
@@ -16,10 +16,9 @@ const TagsPage = ({data}) => {
                 {newTags && newTags.map((tag, index) => {
                     
                     const [text, value] = tag
-                    const slug = slugify(text, { lower: true })
 
                     return (
-                        <Link to={`/tags/${slug}`} key={index} className="tag">
+                        <Link to={`/tags/${_.kebabCase(text)}/`} key={index} className="tag">
                             <h5>{text}</h5>
                             <p>{value} recipe</p>
                         </Link>
