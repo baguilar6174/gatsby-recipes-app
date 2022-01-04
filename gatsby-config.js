@@ -8,7 +8,7 @@ module.exports = {
   siteMetadata: {
     title: 'Recetas Familiares',
     description: "Este sitio contiene recetas de cocina",
-    siteUrl: 'https://recipes.com', // No trailing slash allowed!
+    siteUrl: 'https://recetas-familiares.netlify.app', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     author: 'Bryan Aguilar'
   },
