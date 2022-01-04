@@ -39,7 +39,7 @@ const AboutPage = ({data}) => {
             <main className='page'>
                 <section className='about-page'>
                     <article>
-                        <h2>Recetas familaires</h2>
+                        <h2>Recetas familiares</h2>
                         <p>Esta página ha sido creada por <a href="https://www.bryan-aguilar.com/" target="_blank" rel="noreferrer">Bryan Aguilar</a> como un sitio estático donde se puede publicar recetas de cocina familiares.</p>
                         {/* <Link to='/contact' className='btn'>contacto</Link> */}
                         <a className='btn' href="https://www.bryan-aguilar.com/" target="_blank" rel="noreferrer">Bryan Aguilar</a>
