@@ -20,7 +20,7 @@ const TagsPage = ({data}) => {
                     return (
                         <Link to={`/tags/${_.kebabCase(text)}/`} key={index} className="tag">
                             <h5>{text}</h5>
-                            <p>{value} recipe</p>
+                            <p>{value} receta</p>
                         </Link>
                     )
                 })}

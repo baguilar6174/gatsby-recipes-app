@@ -19,12 +19,13 @@ const NavBar = () => {
                     </button>
                 </div>
                 <div className={ show ? 'nav-links show-links': 'nav-links' }>
-                    <Link to='/' className='nav-link' activeClassName='active-link' onClick={() => setShow(false)}>home</Link>
-                    <Link to='/recipes' className='nav-link' activeClassName='active-link' onClick={() => setShow(false)}>recipes</Link>
-                    <Link to='/tags' className='nav-link' activeClassName='active-link' onClick={() => setShow(false)}>tags</Link>
-                    <Link to='/about' className='nav-link' activeClassName='active-link' onClick={() => setShow(false)}>about</Link>
+                    <Link to='/' className='nav-link' activeClassName='active-link' onClick={() => setShow(false)}>inicio</Link>
+                    <Link to='/recipes' className='nav-link' activeClassName='active-link' onClick={() => setShow(false)}>recetas</Link>
+                    <Link to='/tags' className='nav-link' activeClassName='active-link' onClick={() => setShow(false)}>categorías</Link>
+                    <Link to='/about' className='nav-link' activeClassName='active-link' onClick={() => setShow(false)}>acerca&nbsp;de</Link>
                     <div className="nav-link contact-link">
-                        <Link to='/contact' className='btn' onClick={() => setShow(false)}>contact</Link>
+                        {/* <Link to='/contact' className='btn' onClick={() => setShow(false)}>contacto</Link> */}
+                        <a className='btn' href="https://www.bryan-aguilar.com/" target="_blank" rel="noreferrer">Bryan Aguilar</a>
                     </div>
                 </div>
             </div>

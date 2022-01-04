@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import RecipesList from "../components/RecipesList";
 
 export const query = graphql`
@@ -13,6 +13,7 @@ export const query = graphql`
             node {
                 frontmatter {
                     title
+                    slug
                     image {
                         childImageSharp {
                             gatsbyImageData(tracedSVGOptions: {color: "#7b74ff"})
@@ -38,10 +39,10 @@ const AboutPage = ({data}) => {
             <main className='page'>
                 <section className='about-page'>
                     <article>
-                        <h2>Gastby Recipes</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, reiciendis.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, adipisci! Aliquid qui mollitia sunt natus?</p>
-                        <Link to='/contact' className='btn'>contact</Link>
+                        <h2>Recetas familaires</h2>
+                        <p>Esta página ha sido creada por <a href="https://www.bryan-aguilar.com/" target="_blank" rel="noreferrer">Bryan Aguilar</a> como un sitio estático donde se puede publicar recetas de cocina familiares.</p>
+                        {/* <Link to='/contact' className='btn'>contacto</Link> */}
+                        <a className='btn' href="https://www.bryan-aguilar.com/" target="_blank" rel="noreferrer">Bryan Aguilar</a>
                     </article>
                     <StaticImage src='../assets/images/about.jpeg' alt='About Image' className='about-img' placeholder='blurred'/>
                 </section>

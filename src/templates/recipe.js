@@ -8,7 +8,7 @@ const _ = require('lodash');
 const RecipeTemplate = ({data}) => {
 
     const { frontmatter, html } = data.markdownRemark;
-    const { cookTime, ingredients, instructions, prepTime, servings, tags, title, tools, image } = frontmatter;
+    const { cookTime, ingredients, instructions, prepTime, servings, tags, title, image } = frontmatter;
     const pathToImage = getImage(image);
 
     return (
@@ -30,23 +30,23 @@ const RecipeTemplate = ({data}) => {
                         <div className="recipe-icons">
                             <article>
                             <BsClock />
-                            <h5>prep time</h5>
+                            <h5>Preparación</h5>
                             <p>{prepTime} min.</p>
                             </article>
                             <article>
                             <BsClockHistory />
-                            <h5>cook time</h5>
+                            <h5>Cocción</h5>
                             <p>{cookTime} min.</p>
                             </article>
                             <article>
                             <BsPeople />
-                            <h5>serving</h5>
+                            <h5>Porciones</h5>
                             <p>{servings} </p>
                             </article>
                         </div>
                         {/* tags */}
                         <p className="recipe-tags">
-                            Tags :
+                            Categorías :
                             {tags.map((tag, index) => {
                             return (
                                 <Link to={`/tags/${_.kebabCase(tag)}/`} key={index}>
@@ -60,12 +60,12 @@ const RecipeTemplate = ({data}) => {
                     {/* rest of the content */}
                     <section className="recipe-content">
                         <article>
-                        <h4>instructions</h4>
+                        <h4>instrucciones</h4>
                         {instructions.map((item, index) => {
                             return (
                             <div key={index} className="single-instruction">
                                 <header>
-                                <p>step {index + 1}</p>
+                                <p>Paso {index + 1}</p>
                                 <div></div>
                                 </header>
                                 <p>{item}</p>
@@ -75,7 +75,7 @@ const RecipeTemplate = ({data}) => {
                         </article>
                         <article className="second-column">
                         <div>
-                            <h4>ingredients</h4>
+                            <h4>ingredientes</h4>
                             {ingredients.map((item, index) => {
                             return (
                                 <p key={index} className="single-ingredient">
@@ -84,7 +84,7 @@ const RecipeTemplate = ({data}) => {
                             )
                             })}
                         </div>
-                        <div>
+                        {/* <div>
                             <h4>tools</h4>
                             {tools.map((item, index) => {
                             return (
@@ -93,7 +93,7 @@ const RecipeTemplate = ({data}) => {
                                 </p>
                             )
                             })}
-                        </div>
+                        </div> */}
                         </article>
                     </section>
                 </div>

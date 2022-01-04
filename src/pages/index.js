@@ -11,8 +11,8 @@ const Home = () => {
 					<StaticImage src='../assets/images/main.jpeg' alt='Main Image' className='hero-img' placeholder='tracedSVG' layout='fullWidth'/>
 					<div className="hero-container">
 						<div className="hero-text">
-							<h1>simply recipes</h1>
-							<h4>just recipes</h4>
+							<h1>Recetas Familiares</h1>
+							{/* <h4>just recipes</h4> */}
 						</div>
 					</div>
 				</header>

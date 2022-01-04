@@ -9,7 +9,7 @@ const TagsList = ({recipes}) => {
 
     return (
         <div className="tag-container">
-            <h4>Etiquetas</h4>
+            <h4>Categorías</h4>
             <div className="tags-list">
             {newTags.map((tag, index) => {
                 
